@@ -9,8 +9,8 @@
 title:       Raydium的周期律
 email:       'fengrui1226@gmail.com'
 description: '严肃一点的个人博客站'
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://tkaray.github.io/tkaray/' # The base hostname & protocol for your site
+baseurl:     '/tkaray' # The subpath of your site, e.g. /blog
+url:         'https://tkaray.github.io/' # The base hostname & protocol for your site
 twitter:     ''
 github:      'tkaray'
 instagram:   'Raydium77'
