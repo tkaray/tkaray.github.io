@@ -5,6 +5,7 @@ image: '/images/pages/styleguide.jpg'
 ---
 
 这是系统默认生成的页面，但是看起来很有用，所以保存下来了。
+
 This is the default sample page, saved as it seems useful. :P
 
 At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation.
