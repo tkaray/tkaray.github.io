@@ -32,7 +32,7 @@ https://gems.ruby-china.com
 成功配置本地 Jekyll 环境后，在本地加载正常了。
 
 但是 push 到远端后，发现样式并没有正常加载。参考网上的提示，打开控制台后发现有以下错误：
-<img alt="" src="/images/posts/20200321/1.png">
+![]({{ site.url }}tkaray/images/posts/20200321/1.png)
 
 仔细对比后发现，原本的位置应当显示为
 ```
@@ -49,11 +49,11 @@ https://tkaray.github.io/tkaray/
 
 意识到这个问题后，在 _config.yml 中才发现还有文件夹设置：
 
-![原来的设置]({{ site.url }}/images/posts/20200321/2.png)
+![原来的设置]({{ site.url }}tkaray/images/posts/20200321/2.png)
 
 改成了下面这样：
 
-![修改后的设置]({{ site.url }}/images/posts/20200321/3.png)
+![修改后的设置]({{ site.url }}tkaray/images/posts/20200321/3.png)
 
 样式问题解决了，可是又发现：
 
@@ -89,4 +89,11 @@ https://tkaray.github.io/tkaray/
 ```
 []({{ site.url }}/images/posts/)
 ```
-然后，遇到了和前面一样的问题:子文件夹会出问题……
+然后，遇到了和前面一样的问题:子文件夹会出问题……所以就应该写成
+```
+![]({{ site.url }}{{ site.baseurl }}images/posts/)
+```
+然后要和 _config.yml 中的设置对应（把斜线配合起来，连着两个就尴尬了），然而好像还没有写成 tkaray/ 更简洁一点。
+
+
+
