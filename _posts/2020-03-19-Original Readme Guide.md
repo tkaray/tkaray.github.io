@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Original Readme by TYPE Style
-image: ''
 ---
 
 

@@ -105,3 +105,6 @@ https://tkaray.github.io/tkaray/
 
 
 **不过，如果想省事，还是自己买个域名吧，就不用考虑子域名的问题了。**
+
+PS 还有一个没有用到的网站，也许以后可以在这里看看需要查询的麻烦。
+[Troubleshooting Jekyll build errors for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites)
