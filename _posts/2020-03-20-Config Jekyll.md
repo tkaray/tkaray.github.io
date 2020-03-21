@@ -42,4 +42,21 @@ https://tkaray.github.io/tkaray/
 
 在网上继续检索，Stack Overflow 上有人给出了可能的解决方案：
 
-[]()
+- [Jekyll site works locally but not on Github Pages
+](https://stackoverflow.com/questions/42450554/jekyll-site-works-locally-but-not-on-github-pages/47530487#47530487)
+
+- [Can't get site.baseurl to work in jekyll](https://stackoverflow.com/questions/22514104/cant-get-site-baseurl-to-work-in-jekyll)
+
+意识到这个问题后，在 _config.yml 中才发现还有文件夹设置：
+
+<img alt="" src="/images/pages/20200321/2.png"></img>
+
+改成了下面这样：
+
+<img alt="" src="/images/pages/20200321/3.png"></img>
+
+样式问题解决了，可是又发现：
+
+## 问题 3 主页加载不出来了
+
+
