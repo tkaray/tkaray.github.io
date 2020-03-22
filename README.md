@@ -26,12 +26,6 @@ There are two blogs:
 
 Because after depression on my experimental life on inorganic chemistry, I found that there are dozens of interesting things which people around me don't understand. Experiments aren't everything, so does Ph.D.
 
-If I learn chemistry until dead, I will learn to regret my life. Afterwards, I start to learn to use many tools which isn't chemical needed. Why not go further, and learn to use front-end techs? 
-
-I want to solve the problem mentioned upwards: Why chemistry research is so low-efficient (or only my project)? I love chemistry (so does computer science), but the problems trouble me for a long time, and I want to give a solution.
-
-If these techs will help me get a job, I am glad to bring up the solution with help of information technologies, where it may lies on.
-
 > **It CANNOT be solved by the classical methods, but the technology revolution will.**
 
 
