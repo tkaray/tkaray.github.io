@@ -18,6 +18,8 @@ Ray 的学术资料分享站.
 
 来自于一首歌. [夜航星 Night Voyager](https://www.bilibili.com/bangumi/play/ep311070)
 
+曾用 **Raydium 的周期律** 作为标题.
+
 ## 另一个博客
 
 我的另一个博客: [rayray.moe](https://rayray.moe) 整理好的内容会搬过来. ⚠️ 二次元警告
