@@ -1,39 +1,53 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
 
-{% include base_path %}
+        {%- include head.html -%}
 
-{% if page.image %}
-  <meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
-{% endif %}
+        {% if page.previous %}
+            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+        {% else %}
+            <link rel="prev" href="{{site.baseurl}}/" />
+        {% endif %}
 
-<div class='o-wrapper'>
-  <div class='o-grid'>
-    <div class='o-grid__col'>
-      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+        {% if page.next %}
+            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+        {% endif %}
+    </head>
+    <body>
+        <div class="book">
 
-        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+            {%- include toc-date.html -%}
 
-        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+            <div class="book-body">
+                {%- include body.html -%}
 
-        <div class='c-content' itemprop='articleBody'>
-          {% include page-image.html %}
+                {% if page.previous %}
+                    <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                {% else %}
+                    <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                {% endif %}
 
-          {{ content }}
+                {% if page.next %}
+                    <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                {% endif %}
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
+            });
+            </script>
         </div>
 
-        <div class='c-tags'>
-          {% for tag in page.tags %}
-            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
-          {% endfor %}
-        </div>
+        {%- include footer.html -%}
 
-        <hr>
-
-        {% include disqus.html %}
-
-      </article>
-    </div>
-  </div>
-</div>
+    </body>
+</html>

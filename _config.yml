@@ -1,48 +1,54 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Configurations
+title:            夜航星 Voyager
+longtitle:        Raydium的周期律
+author:           Ray Feng
+email:            fengrui1226@gmail.com
+description: >
+  Build Jekyll site with the GitBook style.
 
-# Site settings
-title:       Raydium的周期律
-email:       'fengrui1226@gmail.com'
-description: '严肃一点的个人博客站'
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://tkaray.github.io/' # The base hostname & protocol for your site
-twitter:     ''
-github:      'tkaray'
-instagram:   'Raydium77'
-facebook:    ''
+version:          1.0
+gitbook_version:  3.2.3
 
-markdown:  kramdown
-permalink: pretty
-paginate:  10
+url:              'https://tkaray.github.io/'
+baseurl:          ''
+rss:              RSS
 
-sass:
-  style: compressed
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
 
-plugins:
-  - jekyll-paginate
-  - jekyll/tagging
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
 
-include:
-  - _pages
+syntax_highlighter_style: colorful
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
+  - _drafts
 
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
 
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-feed
+  - jemoji
