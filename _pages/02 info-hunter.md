@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To be the info hunter
-date:  2022-03-11
+date:  2022-03-10
 ---
 
 如何快速获得所需信息?
