@@ -41,17 +41,10 @@ ln -s /Users/tkaray/opt/anaconda3/envs/xtb/bin/xtb /Users/tkaray/Library/Orca501
 ## 2. 之前做的关于IAST和CIE的简短教程
 
 (20211004) 都放在b站上了。
-<iframe id="spkj" src="https://player.bilibili.com/player.html?bvid=BV1J341127PE&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
 
-<iframe id="spkk" src="https://player.bilibili.com/player.html?bvid=BV1ib4y1y7GL&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkk").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
+[基于pyGAPS包计算气体吸附IAST选择性 BV1J341127PE](https://www.bilibili.com/video/BV1J341127PE)
 
-此处使用了https://baiyue.one/archives/452.html给出的方法，内嵌js用于自适应iframe。
+[CIE坐标的获取与转化-通过波长、光谱得到CIE xy和RGB坐标 BV1ib4y1y7GL](https://www.bilibili.com/video/BV1ib4y1y7GL)
 
 ## 3. 批量导入 cif 结构对应文献到 Endnote 的方法
 
