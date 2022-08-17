@@ -1,10 +1,37 @@
 ---
 layout: post
-title: 杂项内容 - 各种 posts
+title: 杂项 - 无关化学
 
 ---
 
-## 配置 Jekyll 遇到的坑们 - 2020-03-20
+## 1. Word 和 PPT 压缩图片大小的方法
+
+(20220617) 缩小尺寸过大的 Word 和 PPT 文件总是一个难题: 虽然 Office 提供了批量修改 DPI 的方法，但即使 DPI 降到最低，尺寸依旧很大. 我们不知道文档中哪几个图像或附件吃下了巨大空间, 还好巨硬给我们留下了一条简单易行的办法:
+
+**解压 docx/pptx 文档.**
+
+其实 docx 和 pptx 文件都是压缩包, 只要把后缀名改成 zip, 就可以用常见解压缩软件打开了 (Windows) 自带的应该就可以. docx 文件的附件页在 doc/media 里面, pptx 的附件页在 ppt/media 里面. 
+
+![W4HjDTeBcmJCZvg](https://s2.loli.net/2022/08/17/W4HjDTeBcmJCZvg.jpg)
+ 
+罪魁祸首看来就是这几个大图片了~一般来说 word 和 ppt 里面存下的 .tiff 格式图片都非常大，可以考虑换成 jpg 文件, 尺寸会小得多.
+
+对图片尺寸压缩/格式修改有两种方式:
+
+1. 在软件中按照图片位置用压缩后的图片挨个替换;
+2. 压缩图片后, 把文件夹重新压缩成 zip, 再把后缀改回去 (狸猫换太子). 需要注意如果在修改图片过程中改了后缀, 程序可能会报错. 同时由于不同软件默认压缩方法不同, 可能 word / ppt 会提示文件损坏需要修复. 如果修复效果不好, 就还是换成前一个方法吧.
+
+## 2. Word 表格后的空白页如何删掉
+
+(20220716) 整页表格后的换行符不能被删除，只能被挪到上一页。
+
+除了【缩小表格尺寸】和【缩小页边距】这种在特殊情况下不能使用的办法外，还有一个较为通用的办法。
+
+在最后一页的换行符处修改格式→段落→缩进和间距→间距→行距→固定值→值设为1磅，同时行前和行后距离都改成0。
+
+同时，如果表格后一页存在横竖版式的转换（表格页面为竖版但下一页为横版，以及相反情况）Word 会自动添加一个分节符（下一页），这时需要先调节末尾页面版式以与前页匹配，然后切换视图到 Web 或 草稿并删除分节符，最后调节段落行距。
+
+## X. 配置 Jekyll 遇到的坑们 - 2020-03-20
 配置 Jekyll & GitHub Pages 还有点难度。
 
 GitHub Page 搭建有许多教程，我首先参考了少数派上的搭建指南。
@@ -113,3 +140,4 @@ https://tkaray.github.io/tkaray/
 
 PS 还有一个没有用到的网站，也许以后可以在这里看看需要查询的麻烦。
 [Troubleshooting Jekyll build errors for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites)
+
