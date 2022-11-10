@@ -94,3 +94,11 @@ Bruker/Siemens RAW (versions 1,2,4), Bruker BRML, STOE RAW (plus multi-range fil
 转换过程十分简单, 将一个或多个文件导入后选择导出格式即可, 感觉连教程都不需要了... 因为软件网站不太好连上, 就把软件发到了度盘, 如果觉得有用记得引用原文.
 
 链接: https://pan.baidu.com/s/1qPBPrUcDJrOcHvKmf_Z50A?pwd=awsl 提取码: awsl
+
+## 5. Gaussian 的引用要求太长了
+
+在一篇 Nat. Commun. 看到了一种写法, 由于 Nat. Commun. 三个作者以上仅标注首位作者, 因此变得很短. 这样看起来就舒服多了.
+
+```
+Frisch, M. J. et al. Gaussian 16, Revision C.01, Gaussian, Inc.
+```

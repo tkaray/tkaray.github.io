@@ -31,6 +31,20 @@ title: 杂项 - 无关化学
 
 同时，如果表格后一页存在横竖版式的转换（表格页面为竖版但下一页为横版，以及相反情况）Word 会自动添加一个分节符（下一页），这时需要先调节末尾页面版式以与前页匹配，然后切换视图到 Web 或 草稿并删除分节符，最后调节段落行距。
 
+## 3. macOS - 单独修改 Office App 的语言
+
+虽然平时看中文的 app 比较方便, 但转发邮件给外国人时如果里面多了很多中文字符, 可能确实不太行. 由于我使用的是 Outlook, 所以可以单独把 Outlook 的默认语言设置成英文来解决问题.
+
+- [Mac设置Office的语言问题](https://blog.csdn.net/student9128/article/details/80026645)
+
+只要一行命令就可以修改了.
+
+```bash
+defaults write com.microsoft.Outlook AppleLanguages '("en-US")'
+```
+
+Outlook 也可以换成任意一个 Office App, 想要改回中文把语言项替换成 zh-CN 就好.
+
 ## X. 配置 Jekyll 遇到的坑们 - 2020-03-20
 配置 Jekyll & GitHub Pages 还有点难度。
 
