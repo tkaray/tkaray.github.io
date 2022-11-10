@@ -45,6 +45,30 @@ defaults write com.microsoft.Outlook AppleLanguages '("en-US")'
 
 Outlook 也可以换成任意一个 Office App, 想要改回中文把语言项替换成 zh-CN 就好.
 
+## 4. 安装oneAPI后无法使用原来的anaconda虚拟环境的解决办法
+
+(20220920) 参考资料:[conda找不到安装的环境 Could not find conda environment（添加已经存在的python环境）](https://blog.csdn.net/qq_34769162/article/details/107691830)
+
+在安装 oneAPI 后, 它自动添加了Intel oneAPI AI Analytics Toolkit, 内含一个 anaconda 实例, 导致旧有的虚拟环境无法再使用. 使用命令 
+
+```bash
+conda env list
+```
+
+之后能够看到原有的环境, 但是无法调用. 这是因为 Anaconda 的默认虚拟环境目录已经被切换了, 此时需要使用命令添加原有的目录:
+
+```bash
+conda config --append envs_dirs /Users/tkaray/opt/anaconda3/envs/
+```
+
+然后就能够重新执行原来的虚拟环境激活命令了. 如果需要删除, 可以使用命令:
+
+```bash
+conda config --remove envs_dirs /Users/tkaray/opt/anaconda3/envs/
+```
+
+就可以了.
+
 ## X. 配置 Jekyll 遇到的坑们 - 2020-03-20
 配置 Jekyll & GitHub Pages 还有点难度。
 
