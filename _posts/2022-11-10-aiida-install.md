@@ -171,7 +171,7 @@ verdi profile delete quicksetup # 换成之前设置的名字
 
 ## 3 配置 Aiida 的程序插件
 
-由于 VASP 的插件教程写的最详细, 所以在此处就继续参考它的方法了. 但是请注意, 前半段可能走不通, postgresql 会以各种方式 down 掉. 因为这折腾了好几个晚上= =|| 所以我们仅参考以上配置后的部分. 
+由于 VASP 的插件教程写的最详细, 所以在此处就继续参考它的方法了. 但是请注意, 前半段可能走不通, postgresql 会以各种方式 down 掉. 因为这折腾了好几个晚上... 所以我们仅参考以上配置后的部分. 
 
 [AIIDA-VASP](https://aiida-vasp.readthedocs.io/en/latest/getting_started/computer.html)
 
