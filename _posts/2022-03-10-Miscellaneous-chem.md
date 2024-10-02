@@ -102,3 +102,19 @@ Bruker/Siemens RAW (versions 1,2,4), Bruker BRML, STOE RAW (plus multi-range fil
 ```
 Frisch, M. J. et al. Gaussian 16, Revision C.01, Gaussian, Inc.
 ```
+
+## 6. 一些 EndNote 小技巧
+
+### 导入文献去重复
+
+导入的新文献经常会和旧文献有重叠, 但是直接通过 Find Duplicates 删除某些时候又不合适. 比如想新建一个分类, 但是新导入的文献去重后就再也找不到旧有对应的了, 或者其实有 3+ 篇文档, 比对很麻烦. 为了保证无论何种目的都能得到实现, 可以考虑在 Find Duplicates 后选择 Cancel, 这时会多出来一项 Duplicate Reference 分类, 再进行下一步操作即可.
+
+### 修改参考文献文字样式
+
+EndNote 的参考文献文字样式在插件中调整选项很少, 可以选择在 Word 样式窗格中手动调整 EndNote Bibliography 样式. 注意每次更新文献后都需要重新修改.
+
+### SciFinder 导入的内容无法 Find Full Text
+
+这种时候可能是因为导入了 MEDLINE 条目, 条目没有 doi 项. 在使用 SciFinder 搜索内容时建议在得到结果时第一步只选择显示 CAPLUS, 这样就能保证一直都有 doi 了.
+
+换句话说, 只要文章元数据的 doi 能够被正确识别, 而且有下载权限, 就能找到 Full Text.
