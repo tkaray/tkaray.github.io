@@ -113,8 +113,16 @@ Frisch, M. J. et al. Gaussian 16, Revision C.01, Gaussian, Inc.
 
 EndNote 的参考文献文字样式在插件中调整选项很少, 可以选择在 Word 样式窗格中手动调整 EndNote Bibliography 样式. 注意每次更新文献后都需要重新修改.
 
-### SciFinder 导入的内容无法 Find Full Text
+### SciFinder 导入的内容无法 Find Full Text (可能已过期)
+
+2024.10.02 更新: SciFinder 改版了, 这条可能已经失效了.
 
 这种时候可能是因为导入了 MEDLINE 条目, 条目没有 doi 项. 在使用 SciFinder 搜索内容时建议在得到结果时第一步只选择显示 CAPLUS, 这样就能保证一直都有 doi 了.
 
 换句话说, 只要文章元数据的 doi 能够被正确识别, 而且有下载权限, 就能找到 Full Text.
+
+### 解决超算无法安装和 CUDA 有关的包的方法
+
+在使用超算时, 登录节点没有 video driver (CUDA), 因此无法配置 需要 CUDA 的包. 这时候可以参考 [Managing virtual packages](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-virtual.html) 将环境变量 CONDA_OVERRIDE_CUDA 改为想要的 CUDA 版本, 即可跳过检查.
+
+参考链接: [Failed when trying to install deepmd-kit2.1.3&CUDA11.6 with conda](https://github.com/deepmodeling/deepmd-kit/discussions/1810#)
