@@ -13,12 +13,14 @@ Useful resources shared or originally-developed will be repost here after well-o
 
 (20220817) 最近用于分析数据与机理探究的时间比例逐渐增加, 终于摆脱了撒网捕鱼式的实验了. 可喜可贺 🎉🎉🎈🎈
 
+(20241005) 长时间的沉寂来源于令人窒息的工作, 不过总算是喘了一口气, 可以稍微更新一下了.
+
 ### About My Blog 关于我的博客
 
 There are two blogs:
 
 - [Memories of the Starry Sky](https://rayray.moe) where my daily and chemistry-relevant posts will deposit.
-- [Night Voyager](https://tkaray.github.io/tkaray/) (**Current**) where posts collated contents. Although I'm a noob on CS.
+- [Night Voyager](https://tkaray.github.io/) (**Current**) where posts collated contents. Although I'm a noob on CS.
 
 ### Why launch a GitHub Blog 为什么要开这个博客
 

@@ -4,6 +4,9 @@ title: CP2K 在 Docker / Singularity 容器中的安装 (v2022.1)
 
 ---
 
+2024.10.05 更新: 请使用 docker pull 的办法拉取, 这样更方便, 流程见[链接](https://github.com/cp2k/cp2k-containers) 
+
+
 这是一篇关于cp2k 2022 版本 docker 镜像, 和基于 docker 镜像转换的 singularity 文件的安装记录.
 cp2k 2022 版本中不再有基于 toolchain 的 dockerfile, 而是直接使用 docker 自动编译 toolchain 与 cp2k 本体, 这使其编译过程更加方便. 
 参考链接:
