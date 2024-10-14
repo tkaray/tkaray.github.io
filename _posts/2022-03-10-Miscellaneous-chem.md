@@ -134,7 +134,7 @@ EndNote 的参考文献文字样式在插件中调整选项很少, 可以选择�
 首先安装 anaconda, 已安装的就跳过这步. 然后使用 anaconda 创建环境:
 
 ```
-conda create -n -y ghostscript ghostscript
+conda create  -n ghostscript -c conda-forga ghostscript 
 ```
 
 安装完成后, 激活环境. 以后每次用之前先激活环境即可.
