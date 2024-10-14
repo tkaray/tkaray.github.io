@@ -126,3 +126,26 @@ EndNote 的参考文献文字样式在插件中调整选项很少, 可以选择�
 在使用超算时, 登录节点没有 video driver (CUDA), 因此无法配置 需要 CUDA 的包. 这时候可以参考 [Managing virtual packages](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-virtual.html) 将环境变量 CONDA_OVERRIDE_CUDA 改为想要的 CUDA 版本, 即可跳过检查.
 
 参考链接: [Failed when trying to install deepmd-kit2.1.3&CUDA11.6 with conda](https://github.com/deepmodeling/deepmd-kit/discussions/1810#)
+
+## 7. 压缩 PDF 文件
+
+有的时候需要将很大很大的 PDF 压缩到 1 MB 以下, 以前一直认为是"强人所难". 但是其实有一个很好用的工具 ghostscript 能够轻松完成这一任务.
+
+首先安装 anaconda, 已安装的就跳过这步. 然后使用 anaconda 创建环境:
+
+```
+conda create -n -y ghostscript ghostscript
+```
+
+安装完成后, 激活环境. 以后每次用之前先激活环境即可.
+
+```
+conda activate ghostscript
+```
+
+提供输入文件名和输出文件名, 替换以下的 input 和 output 即可:
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
+   -dNOPAUSE -dBATCH -dQUIET -sOutputFile=output.pdf input.pdf
+```
