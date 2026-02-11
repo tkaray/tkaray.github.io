@@ -48,30 +48,30 @@ ln -s /Users/tkaray/opt/anaconda3/envs/xtb/bin/xtb /Users/tkaray/Library/Orca501
 
 ## 3. 批量导入 cif 结构对应文献到 Endnote 的方法
 
-(20220616) CSD Conquest 能够完成各种各样复杂的结构搜索，但是如何把相关文献一次导入是个难题。今天发现了一个新思路，可以将 Conquest 的结果一次性都塞进 Endnote，然后再通过 Endnote 完成批量下载。
+(20220616) CSD Conquest 能够完成各种各样复杂的结构搜索, 但是如何把相关文献一次导入是个难题。今天发现了一个新思路, 可以将 Conquest 的结果一次性都塞进 Endnote, 然后再通过 Endnote 完成批量下载。
 
-适用系统：全平台
+适用系统: 全平台
 
-使用软件：
+使用软件: 
 
-- CSD Conquest （需要一个较高版本，这里使用 2022.01）
-- Endnote （只要能使用 Tab Delimited 导入即可）
-- 任意文本编辑器（如记事本）
+- CSD Conquest (需要一个较高版本, 这里使用 2022.01）
+- Endnote (只要能使用 Tab Delimited 导入即可）
+- 任意文本编辑器(如记事本）
 
-步骤如下：
+步骤如下: 
 
 1. 在 Conquest 执行搜索；
-2. 选好需要的结构后，和往常导出 cif 文件时一样，选择 Export Entries as...；
-3. 选择 TSV: Endnote (import as Tab Delimited)，其他选项同导出 cif 设置；
-4. 将导出后的文件用编辑器打开，查找 http://dx.doi.org/ 并替换删除，并将第二行的 URL 改成 DOI，保存；
-5. 在 EndNote 中导入文件，并选择 Tab Delimited；
-6. 新导入的文件名并不是文献标题，全选新导入的文件，右键 - Find Reference Update，然后选择全部更新；
-7. 有一些文献有重复，因此需要使用 Reference - Find Duplicates 去重，大功告成！
+2. 选好需要的结构后, 和往常导出 cif 文件时一样, 选择 Export Entries as...；
+3. 选择 TSV: Endnote (import as Tab Delimited), 其他选项同导出 cif 设置；
+4. 将导出后的文件用编辑器打开, 查找 http://dx.doi.org/ 并替换删除, 并将第二行的 URL 改成 DOI, 保存；
+5. 在 EndNote 中导入文件, 并选择 Tab Delimited；
+6. 新导入的文件名并不是文献标题, 全选新导入的文件, 右键 - Find Reference Update, 然后选择全部更新；
+7. 有一些文献有重复, 因此需要使用 Reference - Find Duplicates 去重, 大功告成！
 
-注意事项：
+注意事项: 
 
-1. 旧版本的 Conquest 是没有 URL 这一项的，因此可能做不到以上操作，但 2022.01 肯定可以。
-2. 有一些结构没有对应发表的文章，因此会显示为 CSD Communication(Private Communication)。
+1. 旧版本的 Conquest 是没有 URL 这一项的, 因此可能做不到以上操作, 但 2022.01 肯定可以。
+2. 有一些结构没有对应发表的文章, 因此会显示为 CSD Communication(Private Communication)。
 
 ## 4. 用于转换 XRD 测试数据文件的小工具 - PowDLL
 
@@ -134,7 +134,7 @@ EndNote 的参考文献文字样式在插件中调整选项很少, 可以选择�
 首先安装 anaconda, 已安装的就跳过这步. 然后使用 anaconda 创建环境:
 
 ```
-conda create  -n ghostscript -c conda-forga ghostscript 
+conda create  -n ghostscript -c conda-forge ghostscript 
 ```
 
 安装完成后, 激活环境. 以后每次用之前先激活环境即可.
@@ -146,6 +146,23 @@ conda activate ghostscript
 提供输入文件名和输出文件名, 替换以下的 input 和 output 即可:
 
 ```
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-   -dNOPAUSE -dBATCH -dQUIET -sOutputFile=output.pdf input.pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH -dQUIET -sOutputFile=output.pdf input.pdf
+
 ```
+
+## 8. 如何计算去除分子内原子间距的 RDF
+
+参考以下链接中的内容:[[GROMACS] 求助gromacs计算rdf时如何消除分子内峰](http://bbs.keinsci.com/thread-16584-1-1.html)
+
+```
+MD完成以后, 重新制作一个top文件, 把nrexl改成很大的值, 然后重新获得tpr文件. 用这个文件作为gmx rdf的输入. 注意MD不要重跑, 只是在计算rdf的时候用这个tpr文件.
+
+在top文件中改变了nrexcl的值后, 在使用gmx rdf命令的时候要加上 -excl 这个命令使nrexcl的值生效, 老版本的是不需要的。完整的过程应该是: 
+1.MD跑完之后, 重新调整top文件, 将nrexl的值设成较大的值.(该值要超过分子内目标原子之间的最大连接键的数量, 如分子的原子组成为i-j-k-l-m-n, 要避免出现i-n原子之间的内峰, nrexl的值要大于5)
+2.用gmx grompp重新获得 filename.tpr 文件
+3.用gmx rdf计算径向分布函数, 如: 
+gmx rdf -f  filename.gro -s filename.tpr -excl -n index.ndx -o output.xvg -ref * -sel *
+```
+## 9. 绘制两种分子叠加的图片
+
+用 VMD 加载两个结构即可.
