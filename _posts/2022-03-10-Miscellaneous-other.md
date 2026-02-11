@@ -73,6 +73,10 @@ conda config --remove envs_dirs /Users/tkaray/opt/anaconda3/envs/
 
 使用 conda search xxx 后可以获得多种版本与多种 build 的包. 如果需要特定版本, 可以安装时指定 xxx=1.0.0, 但如果需要指定特定 build 时, 则需要再额外指定一次, 如 xxx=1.0.0=*openmpi .
 
+## 6. 使用 Illustrator 导出图片时, 嵌入的白底图片边缘有黑线
+
+这可能是因为Illustrator的反锯齿处理问题, 在导出格式的设置中关闭反锯齿即可.
+
 ## X. 配置 Jekyll 遇到的坑们 - 2020-03-20
 配置 Jekyll & GitHub Pages 还有点难度。
 
