@@ -25,6 +25,6 @@ Because after depression on my experimental life on inorganic chemistry, I found
 
 ### If you like it 如果你喜欢这里
 
-Feel free to comment on blog or start new issues, or you can find me on Zhihu.
+Feel free to comment on blog or start new issues.
 
 Written by Ray with ❤
