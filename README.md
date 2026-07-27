@@ -9,18 +9,12 @@ Re:0 Noob's technical trip 从零开始的菜鸟技术之旅
 ### About Me 个人简介
 
 - Name: Ray
-- School: A Regular School in Tianjin, China (Nankai University from 2010 - 2021)
-- Major: Inorganic Chemistry
+- School: A School in Tianjin, China (Nankai University from 2010 - 2026)
+- Major: Inorganic Chemistry, Materials Chemistry and Physics.
 - Hobby: Repair & Ruin Computers, Anime Music
-- Daily: [Zhihu](https://www.zhihu.com/people/feng-rui-82-22), GitHub. Washing Bottles, break glass, water papers, and repair others' computer in Laboratory
+- Daily: GitHub. Washing Bottles, break glass, water papers, and repair others' computer in Laboratory
 - Interests: Change the current situation of low input/output ratio of chemistry. Learn CS (Computer) for change CS (Chemical)!
 
-### About My Blog 关于我的博客
-
-There are two blogs:
-
-- [rayray.moe](https://rayray.moe) where my daily and chemistry-relevant posts will deposit.
-- [tkaray.github.io/tkaray](https://tkaray.github.io/tkaray/) (**Current**) where posts some technical infos. Although I'm a noob on CS.
 
 ### Why launch a GitHub Blog 为什么要开这个博客
 
