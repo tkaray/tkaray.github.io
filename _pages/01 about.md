@@ -11,12 +11,6 @@ Useful resources shared or originally-developed will be repost here after well-o
 
 你好, 这里是 Ray. 虽然是实验为主的无机化学专业, 但是还是很喜欢折腾有意思的东西.
 
-### About My Blog 关于我的博客
-
-There are two blogs:
-
-- [Memories of the Starry Sky](https://rayray.moe) where my daily and chemistry-relevant posts will deposit.
-- [Night Voyager](https://tkaray.github.io/) (**Current**) where posts collated contents. Although I'm a noob on CS.
 
 ### Why launch a GitHub Blog 为什么要开这个博客
 
@@ -26,7 +20,7 @@ Wish you have a good day!
 
 ## How to find me 如何联系
 
-My e-mail: fengrui1226@gmail.com
+My e-mail: fengrui1226@hotmail.com
 
 Build with ❤ and 🕊 from 21,03,2020.
 
