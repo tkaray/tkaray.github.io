@@ -172,18 +172,3 @@ https://tkaray.github.io/tkaray/
 ### 3 月 23 日 更新
 
 意识到不是 tkaray.github.io 的错误原因在于仓库名字只写了名字… 着实被自己坑了哈哈。改过来了就好了。
-
-### 写在最后
-
-所以……确实很麻烦，理解了五年前想用 Jekyll 建博客，却被折磨的放弃了的感觉。现在查询资料速度和以前比快了很多，所以也就成功做好了。但是边栏分类，还需之后再去解决。这次就先这样吧。
-
-果然还是 WordPress 更傻瓜呀，如果不考虑配置 Linux PHP，Nginx/Apache 的时间还是更省事，毕竟国内的云托管站点都提供了一键镜像，上次配置个人博客好像只用了不到半个小时……
-
-[来看看 rayray.moe 吧](https://rayray.moe/)
-
-
-**不过，如果想省事，还是自己买个域名吧，就不用考虑子域名的问题了。**
-
-PS 还有一个没有用到的网站，也许以后可以在这里看看需要查询的麻烦。
-[Troubleshooting Jekyll build errors for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites)
-
