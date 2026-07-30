@@ -11,7 +11,15 @@ date:  2026-07-27
 
 [UVVis-FL-to-RGB](https://tkaray.github.io/UVVis-FL-to-RGB/)
 
+
+## 让 MacBook 合盖也不会睡眠的小脚本
+
+方便合盖使用, 不过最好不要在 Intel MacBook 上尝试, 会热坏电脑. 也不要跑太高的负载.
+
+[查看或下载 mac-sleep-toggle.sh]({{ '/assets/scripts/mac-sleep-toggle.sh' | relative_url }})
+
+脚本会调用 `sudo pmset` 修改系统级电源设置. `sleep` 命令会写入固定的 10 分钟睡眠参数, 不会自动还原此前的自定义数值.
+
 ## 其它工具待开放中...
 
 还有一些其它的很有意思的工具, 后续做好了会开放.
-
